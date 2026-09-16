@@ -1,0 +1,106 @@
+Given a .txt file containing student names, how would you use Python to count and display repeated student names?
+
+def student_count():
+file =  'students.txt'
+with open(r) file as f:
+         r = f.readlines()
+         s = set(r)
+         for i in s:
+              if r.count(i)>1:
+                   print(i,r.count(i))
+
+
+How would you write test code(pytest or unittest) for this ?
+
+
+
+
+def test_duplicate_student_count():
+    try:
+         student_count()
+    except:
+          raise exception as e
+     
+
+         
+   
+Given a python Class , can you write test case for it ?
+
+
+"""
+
+class Book:
+
+def __init__(self, title, author, pages):
+
+"""Initializes the book with a title, author, and page count."""
+
+self.title = title
+
+self.author = author
+
+self.pages = pages
+
+ 
+
+def describe(self):
+
+"""Returns a short description of the book."""
+
+return f"'{self.title}' by {self.author} ({self.pages} pages)"
+
+"""  
+
+
+@pytest. mark.parameterize( (title, author,pages) = (aaa,abc,123), (null, abc, 123), (aaa, null,123), (aaa, abc, 0), (null, null, 123))
+def test_fun():
+  b = Book(title, author, pages)
+   if title != 'null' and author != 'null' and pages !=0:
+             b.describe()
+   else:
+           print("one of the values is not present")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
